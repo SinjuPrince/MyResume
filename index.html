@@ -23,7 +23,9 @@ and open the template in the editor.
                     <p class="name desig f-name">Software Engineer for Hire</p>
                 </section>
                 <section class="nav-container sub-head">
-                    <nav class="nav-align">
+                    <nav>
+                        <div
+                        class="nav-align">
                         <a href="http://localhost:8383/MyResume/MyResume/index.html">HOME </a>
                         
                         <a href="">CV</a>
@@ -31,6 +33,7 @@ and open the template in the editor.
                         <a href="">PROJECTS</a>
                                          
                           <a href="">CONTACTS</a>
+                        </div>
                           </nav>
                     
                 </section>
@@ -51,7 +54,7 @@ the individual growth. </p>
                      <a id="cv" href="">MY CV</a>
 
                  </section>
-                    <section class=" left-sec">
+                    <section class=" left-sec ">
                         <div class="avail">
                             <span class="label"> Available for:</span>
                             
@@ -65,12 +68,12 @@ the individual growth. </p>
  
                         <a id="content" href="index.html">My Resume</a>
                         </div>
-                        <div class="call">
+                        <div class="call toggle-sec">
                             <span class="label">Cell:</span> 
                           <p class="content"> 7025742912</p>
                           <p class="content"> 0474 2527957</p>                                                        
                         </div>
-                        <div class="email">
+                        <div class="email toggle-sec">
                             <span class="label">Email:</span> 
                           <p class="content"> sinjuzacharias1992@gmail.com</p> 
                           <p class="content"> sinju_zacharias1992@yahoo.com</p>     
@@ -78,11 +81,12 @@ the individual growth. </p>
                         </div>
                         <div class="links" >
                             <span class="label">Social Links</span> </div>
+                            <button class="display-details" id="display-details" onclick="getcontactdetails()">Show Contact Details</button>
                     </section>
             </section>
             
 
         </div>
-
+        <script src="JS/MyResume.js"></script>
     </body>
 </html>

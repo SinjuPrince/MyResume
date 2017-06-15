@@ -55,7 +55,7 @@ html, body, p {
 .nav-container {
     height: 61px;
 }
-nav.nav-align a {
+nav .nav-align a {
     text-decoration: none;
     border-top:  3px solid red;
     width: 74px;
@@ -63,7 +63,7 @@ nav.nav-align a {
     text-align: center;
     padding: 10px 10px 0 10px;
 }
-nav.nav-align a:hover {
+nav .nav-align a:hover {
         border-top:  3px solid grey;
 
 }
@@ -183,4 +183,7 @@ a {
     font-family: monospace;
     margin-bottom: 9px;
     padding-left: 38px;
+}
+.toggle-sec {
+    display: none;
 }
