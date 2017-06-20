@@ -55,12 +55,12 @@ html, body, p {
 }
 nav .nav-align a {
     text-decoration: none;
-    border-top: 3px solid #6d9e1c;
     width: 74px;
     display: inline-block;
     text-align: center;
     padding: 10px 10px 0 10px;
     margin-right: 5px;
+    border-top: 3px solid #6d9e1c;
 }
 nav .nav-align a:hover {
         border-top:  3px solid grey;
