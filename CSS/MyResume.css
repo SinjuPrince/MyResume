@@ -2,7 +2,6 @@ html, body, p {
     margin: 0;
 }
 .container {
-    border: 1px solid black;
     padding: 30px;
     float: left;
     width: 95%;
@@ -23,7 +22,6 @@ html, body, p {
 .sub-head {
     position: relative;
     float: left;
-    border: 1px solid white;
     width: 49.23%;
 }
 
@@ -57,11 +55,12 @@ html, body, p {
 }
 nav .nav-align a {
     text-decoration: none;
-    border-top:  3px solid red;
+    border-top: 3px solid #6d9e1c;
     width: 74px;
     display: inline-block;
     text-align: center;
     padding: 10px 10px 0 10px;
+    margin-right: 5px;
 }
 nav .nav-align a:hover {
         border-top:  3px solid grey;
@@ -84,7 +83,7 @@ a {
     width: 96.8%;
     padding: 20px;
     height: 500px;
-    border: 1px solid blue;
+   
 }
 
 .home-content {
@@ -100,10 +99,10 @@ a {
 
 .image {
     
-    width: 9.8%;
+    width: 9.9%;
     padding: 77px;
     height: 219px;
-    border: 1px solid rgba(128, 128, 128, 0.26);
+    
     margin: 16px;
     float: left;
 }
@@ -111,11 +110,11 @@ a {
 .img {
     width: 231%;
     height: 373px;
+    border: 1px solid rgb(128, 128, 128);
     margin: -78px;
 }
 
 .prof-desc {
-    border: 1px solid #c0c0c0;
     height: 373px;
     width: 348px;
     float: left;
@@ -175,7 +174,7 @@ a {
       color: black;
     font-family: monospace;
     margin-bottom: 9px;
-    padding-left: 38px;
+font-family: verdana;
 }
 
 #content {
@@ -186,4 +185,9 @@ a {
 }
 .toggle-sec {
     display: none;
+}
+
+.avail {
+   font-family: verdana;
+   padding: 10px 0;
 }
