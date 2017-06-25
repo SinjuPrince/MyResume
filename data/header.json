@@ -1,0 +1,52 @@
+{
+    "Name": {
+        "fName":"Sinju",
+        "lName": "Zacharias"
+        },
+    "titleDesc": "Software Engineer For Hire",
+    "menuItems": [
+        {
+            "displayName":"Home",
+            "link":"index.html"
+        },
+        {
+            "displayName":"CV",
+            "link":""
+        },
+        {
+            "displayName":"Academics",
+            "link":""
+        },
+        {
+            "displayName":"Projects",
+            "link":""
+        },
+        {
+            "displayName":"Contacts",
+            "link":""
+        }
+        
+    ], 
+  
+"Home": { 
+            "imgURL": "image/Sinju.jpg",
+            "heading": "HELLO,",
+            "className":["hello", "desc","cv"],
+            "fnName" : "getCV()",
+            "prof" : ["I'm available for work","To work in a competent environment that would enable me to cope with the emerging business trends and technologies and widen the spectrum of my knowledge to add value to the individual growth."], 
+            "link" : "index.html",
+            "right-sec" :""
+},
+"span" : {
+                "Availablefor" : ["Software Development","Software Testing","CAD Designing"],
+                "Website" : ["My Resume"],
+                "Cell" : ["7025742912" , "0474 2527957"],
+                "Email" : ["sinjuzacharias1992@gmail.com", "sinju_zacharias1992@yahoo.com"]
+                }
+    
+}
+
+
+ 
+    
+

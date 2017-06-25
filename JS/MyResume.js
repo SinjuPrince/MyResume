@@ -95,7 +95,7 @@ function renderProfile(passedResponse) {
            
            temp1 += '<p class="content">'+span4[i]+'</p>';
        }
-       temp1 += '</div><button class="display-details" id="display-details" onclick="getcontactdetails()">Show Contact Details</button>';
+       temp1 += '</div><button class="display-details" id="display-details" onclick="getcontactdetails()">Show Contact Details</button> <div class="links" ><span class="label">Social Links</span> </div>';
              document.getElementsByClassName("right-sec")[0].innerHTML = temp1;
 }
 
