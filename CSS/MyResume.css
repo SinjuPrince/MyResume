@@ -107,14 +107,14 @@ a {
     float: left;
 }
 
-.img {
+#img {
     width: 231%;
     height: 373px;
     border: 1px solid rgb(128, 128, 128);
     margin: -78px;
 }
 
-.prof-desc {
+#prof-desc {
     height: 373px;
     width: 348px;
     float: left;
@@ -155,13 +155,13 @@ a {
     background-color: #6d9e1c;
     padding: 10px;
     font-size: 20px;
-    /* margin-left: 99px; */
-    line-height: 9;
-    margin-left: 129px;;
+    line-height: 1;
+    margin-left: 129px;
+    margin-top: 28px;
 
 }   
 
-.left-sec {
+.right-sec {
     min-height: 334px;
     margin-top: 15px;
     float: right;
@@ -190,4 +190,8 @@ font-family: verdana;
 .avail {
    font-family: verdana;
    padding: 10px 0;
+}
+
+.label {
+    line-height: 2;
 }

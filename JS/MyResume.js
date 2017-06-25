@@ -3,6 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
 */
+
+
+
 function makeRequest (method, url) {
     
   return new Promise(function (resolve, reject) {
@@ -43,9 +46,9 @@ function getcontactdetails() {
     document.getElementById("display-details").classList.add("toggle-sec");
 };
 
-function renderHeader(data){
-    var res = data.data;
-    console.log(data)
+function renderHeader(passedResponse){
+    var res = passedResponse.data;
+    console.log(passedResponse);
       var temp = '<p class="name f-name">' +res.Name.fName+ '</p><p class="name l-name">'+res.Name.lName+'</p><p class="name desig f-name">'+res.titleDesc+'</p>';
       var navTemp = '<div class="nav-align">',i,menuitems=res.menuItems;
        document.getElementById("name-container").innerHTML = temp;
@@ -55,15 +58,36 @@ function renderHeader(data){
       navTemp += '</div>';
       document.getElementById("navigation-bar").innerHTML = navTemp;
 };
+function renderProfile(passedResponse) {
+   console.log(passedResponse);
+   var res = passedResponse.data;
+  document.getElementById("img").src = res.Home.imgURL;
+    var homeProf=res.Home.prof, temp = '<h1 id="hello">' +res.Home.heading +'</h1>';
+      
+        for(j=0; j<=homeProf.length-1; j++){
+           
+           temp += '<p class="' +res.Home.className[j] +'">'+homeProf[j]+'</p>';
+       }
+       temp +='<button id="' +res.Home.className[2] +'" onclick="' +res.Home.fnName +'">MY CV</button>'
+          document.getElementById("prof-desc").innerHTML = temp;
+        var  temp1 = '<span class="label"> Available for:</span>', span1= res.span.Availablefor;
+          for (i=0; i<span1.length  ; i++){
+              temp1 += '<p class="content">' +span1[i] +'</p>';
+          }
+      
+             document.getElementsByClassName("avail")[0].innerHTML = temp1;
+}
 
 window.onload = function() {
    var url = 'data/header.json';
    makeRequest('GET',url)
    .then(function (res){
-      renderHeader(res)
+      renderHeader(res);
+      renderProfile(res);
+      
    })
    .catch(function (error){
-       console.log(error)
+       console.log(error);
    });
 };
    
