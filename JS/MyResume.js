@@ -69,13 +69,34 @@ function renderProfile(passedResponse) {
            temp += '<p class="' +res.Home.className[j] +'">'+homeProf[j]+'</p>';
        }
        temp +='<button id="' +res.Home.className[2] +'" onclick="' +res.Home.fnName +'">MY CV</button>'
-          document.getElementById("prof-desc").innerHTML = temp;
-        var  temp1 = '<span class="label"> Available for:</span>', span1= res.span.Availablefor;
+        document.getElementById("prof-desc").innerHTML = temp;
+        
+    var  temp1 = '<div class="avail"><span class="label"> Available for:</span>', span1 = res.span.Availablefor, span2 = res.span.Website, span3 = res.span.Cell, span4 = res.span.Email;
           for (i=0; i<span1.length  ; i++){
               temp1 += '<p class="content">' +span1[i] +'</p>';
           }
+      temp1 += '</div><div class="web"> <span class="label"> Website:</span>';
       
-             document.getElementsByClassName("avail")[0].innerHTML = temp1;
+      for (i=0; i<span2.length  ; i++){
+              temp1 += '<a id="content" href="MyResume.html">'+span2[i]+'</a>';
+          }
+
+      temp1 += '</div><div class=" toggle-sec"><span class="label"> Cell:</span>';
+      
+                           //  document.getElementsByClassName("right-sec")[0].innerHTML = temp1;
+
+      for(i=0; i<span3.length; i++){
+           
+           temp1 += '<p class="content">'+span3[i]+'</p>';
+       }
+       temp1 += '</div><div class=" toggle-sec"><span class="label"> Email:</span> ';
+       
+       for(i=0; i<span4.length; i++){
+           
+           temp1 += '<p class="content">'+span4[i]+'</p>';
+       }
+       temp1 += '</div><button class="display-details" id="display-details" onclick="getcontactdetails()">Show Contact Details</button>';
+             document.getElementsByClassName("right-sec")[0].innerHTML = temp1;
 }
 
 window.onload = function() {

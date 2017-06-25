@@ -1,6 +1,7 @@
 html, body, p {
     margin: 0;
 }
+
 .container {
     padding: 30px;
     float: left;
@@ -178,8 +179,8 @@ font-family: verdana;
 }
 
 #content {
-      color: black;
-    font-family: monospace;
+    color: black;
+    font-family: sans-serif;
     margin-bottom: 9px;
     padding-left: 38px;
 }
